@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ROIQueryCore'
+  s.name             = 'DataTower'
   s.version          = '1.3.2'
   s.summary          = 'This is a ios frameWork for LovinJoy Data Tower.'
   s.description      = <<-DESC
