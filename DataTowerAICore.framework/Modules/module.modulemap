@@ -1,0 +1,10 @@
+framework module DataTowerAICore {
+    header "DT.h"
+    header "DTConstant.h"
+    header "DTAdReport.h"
+    header "DTAnalytics.h"
+    header "DTAnalyticsUtils.h"
+    header "DTIAPReport.h"
+    header "DTIASReport.h"
+    export *
+}
