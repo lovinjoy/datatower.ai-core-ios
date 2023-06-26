@@ -49,6 +49,13 @@ NS_ASSUME_NONNULL_BEGIN
 */
 + (void)userAppend:(NSDictionary<NSString *, NSArray *> *)properties;
 
+/**
+ 对 Array 类型的用户属性进行追加操作，并且会对数组元素去重
+ 
+ @param properties 用户属性
+*/
++ (void)userUniqAppend:(NSDictionary<NSString *, NSArray *> *)properties;
+
 /// 设置自有用户系统的id
 /// - Parameters:
 ///   - accountId: 用户系统id

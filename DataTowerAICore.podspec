@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DataTowerAICore'
-  s.version          = '1.3.3.2'
+  s.version          = '2.0.0-beta1'
   s.summary          = 'This is a ios frameWork for LovinJoy Data Tower.'
   s.description      = <<-DESC
                     DataTower.framework provides a quick way to record your project acttion
@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   s.frameworks = ["Foundation", "SystemConfiguration", "CoreGraphics", "Security","CoreTelephony"]
   s.libraries = ["sqlite3", "z"]
   s.requires_arc = true
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
   
 end

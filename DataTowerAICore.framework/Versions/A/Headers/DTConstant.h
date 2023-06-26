@@ -9,7 +9,7 @@ typedef enum : NSUInteger {
 } DTChannel;
 
 
-typedef enum  : NSUInteger {
+typedef enum  : NSInteger {
     DTAdTypeIdle = -1,
     DTAdTypeBanner = 0,
     DTAdTypeInterstitial = 1,
@@ -21,7 +21,7 @@ typedef enum  : NSUInteger {
   
 }DTAdType;
 
-typedef enum  : NSUInteger {
+typedef enum  : NSInteger {
     DTAdMediationIdle = -1,
     DTAdMediationMopub = 0,
     DTAdMediationMax = 1,
@@ -29,7 +29,7 @@ typedef enum  : NSUInteger {
     DTAdMediationCombo = 3,
 }DTAdMediation;
 
-typedef enum  : NSUInteger {
+typedef enum  : NSInteger {
     DTAdPlatformUndisclosed = -2,
     DTAdPlatformIdle = -1,
     DTAdPlatformAdmob = 0,
