@@ -94,7 +94,7 @@ typedef NS_OPTIONS(NSInteger, DTAutoTrackEventType) {
     /**
      SDK 初始化
      */
-    DTAutoTrackEventTypeInitialize    = 1 << 0,
+//    DTAutoTrackEventTypeInitialize    = 1 << 0,
     
     /*
      APP 启动或从后台恢复事件
@@ -115,7 +115,7 @@ typedef NS_OPTIONS(NSInteger, DTAutoTrackEventType) {
      
      以上全部 APP 事件
      */
-    DTAutoTrackEventTypeAll    = DTAutoTrackEventTypeInitialize |DTAutoTrackEventTypeAppInstall | DTAutoTrackEventTypeAppStart | DTAutoTrackEventTypeAppEnd
+    DTAutoTrackEventTypeAll    = DTAutoTrackEventTypeAppInstall | DTAutoTrackEventTypeAppStart | DTAutoTrackEventTypeAppEnd
 
 };
 
