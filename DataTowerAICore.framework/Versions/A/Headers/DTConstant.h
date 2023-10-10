@@ -27,6 +27,10 @@ typedef enum  : NSInteger {
     DTAdMediationMax = 1,
     DTAdMediationHisavana = 2,
     DTAdMediationCombo = 3,
+    DTAdMediationTopon = 4,
+    DTAdMediationTradPlus = 5,
+    DTAdMediationToBid = 6,
+
 }DTAdMediation;
 
 typedef enum  : NSInteger {
@@ -51,8 +55,23 @@ typedef enum  : NSInteger {
     DTAdPlatformBigo = 16,
     DTAdPlatformHisavana = 17,
     DTAdPlatformApplovinExchange = 18,
+    DTAdPlatformMintegral = 19,
+    DTAdPlatformLiftoff = 20,
+    DTAdPlatformA4G = 21,
+    DTAdPlatformGoogleAdManager = 22,
+    DTAdPlatformFyber = 23,
+    DTAdPlatformMaio = 24,
+    DTAdPlatformCriteo = 25,
+    DTAdPlatformMyTarget = 26,
+    DTAdPlatformOgury = 27,
+    DTAdPlatformAppnext = 28,
+    DTAdPlatformKidoz = 29,
+    DTAdPlatformSmaato = 30,
+    DTAdPlatformStart_io = 31,
+    DTAdPlatformVerve= 32,
     DTAdPlatformLovinJoyAds = 33,
-  
+    DTAdPlatformYandex = 34,
+    DTAdPlatformReklamUp = 35,
 }DTAdPlatform;
 
 /**
