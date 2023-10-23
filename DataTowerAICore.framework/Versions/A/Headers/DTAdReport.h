@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
                     type:(DTAdType)type
                 platform:(DTAdPlatform)platform
                      seq:(NSString *)seq
+               mediation:(DTAdMediation)mediation
+             mediationId:(NSString *)mediationId
               properties:(NSDictionary *)properties;
 
 /**
@@ -40,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
               duration:(NSNumber *)duration
                 result:(BOOL)result
                    seq:(NSString *)seq
+             mediation:(DTAdMediation)mediation
+           mediationId:(NSString *)mediationId
              errorCode:(NSInteger)errorCode
           errorMessage:(NSString *)errorMessage
             properties:(NSDictionary *)properties;
@@ -56,11 +60,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportToShow:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
+                 type:(DTAdType)type
+             platform:(DTAdPlatform)platform
+             location:(NSString *)location
+                  seq:(NSString *)seq
+            mediation:(DTAdMediation)mediation
+          mediationId:(NSString *)mediationId
+           properties:(NSDictionary *)properties
              entrance:(NSString *)entrance;
 
 
@@ -77,12 +83,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportShow:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-             entrance:(NSString *)entrance;
+               type:(DTAdType)type
+           platform:(DTAdPlatform)platform
+           location:(NSString *)location
+                seq:(NSString *)seq
+          mediation:(DTAdMediation)mediation
+        mediationId:(NSString *)mediationId
+         properties:(NSDictionary *)properties
+           entrance:(NSString *)entrance;
 
 
 /**
@@ -99,14 +107,16 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportAdShowFail:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
+                     type:(DTAdType)type
+                 platform:(DTAdPlatform)platform
+                 location:(NSString *)location
+                      seq:(NSString *)seq
+                mediation:(DTAdMediation)mediation
+              mediationId:(NSString *)mediationId
                 errorCode:(NSInteger)errorCode
              errorMessage:(NSString *)errorMessage
-              properties:(NSDictionary *)properties
-             entrance:(NSString *)entrance;
+               properties:(NSDictionary *)properties
+                 entrance:(NSString *)entrance;
 
 /**
  * 上报 广告点击
@@ -120,12 +130,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportClick:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                type:(DTAdType)type
+            platform:(DTAdPlatform)platform
+            location:(NSString *)location
+                 seq:(NSString *)seq
+           mediation:(DTAdMediation)mediation
+         mediationId:(NSString *)mediationId
+          properties:(NSDictionary *)properties
+            entrance:(NSString *)entrance;
 
 /**
  * 上报 自定义转化，通过点击
@@ -139,12 +151,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportConversionByClick:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                            type:(DTAdType)type
+                        platform:(DTAdPlatform)platform
+                        location:(NSString *)location
+                             seq:(NSString *)seq
+                       mediation:(DTAdMediation)mediation
+                     mediationId:(NSString *)mediationId
+                      properties:(NSDictionary *)properties
+                        entrance:(NSString *)entrance;
 
 /**
  * 上报 激励广告已获得奖励
@@ -158,12 +172,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportRewarded:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                   type:(DTAdType)type
+               platform:(DTAdPlatform)platform
+               location:(NSString *)location
+                    seq:(NSString *)seq
+              mediation:(DTAdMediation)mediation
+            mediationId:(NSString *)mediationId
+             properties:(NSDictionary *)properties
+               entrance:(NSString *)entrance;
 
 
 /**
@@ -178,12 +194,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportConversionByRewarded:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                               type:(DTAdType)type
+                           platform:(DTAdPlatform)platform
+                           location:(NSString *)location
+                                seq:(NSString *)seq
+                          mediation:(DTAdMediation)mediation
+                        mediationId:(NSString *)mediationId
+                         properties:(NSDictionary *)properties
+                           entrance:(NSString *)entrance;
 
 /**
  * 上报 访问广告链接，离开当前app(页面)
@@ -197,12 +215,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportLeftApp:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                  type:(DTAdType)type
+              platform:(DTAdPlatform)platform
+              location:(NSString *)location
+                   seq:(NSString *)seq
+             mediation:(DTAdMediation)mediation
+           mediationId:(NSString *)mediationId
+            properties:(NSDictionary *)properties
+              entrance:(NSString *)entrance;
 
 /**
  * 上报 自定义转化，通过跳出app
@@ -216,12 +236,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportConversionByLeftApp:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                              type:(DTAdType)type
+                          platform:(DTAdPlatform)platform
+                          location:(NSString *)location
+                               seq:(NSString *)seq
+                         mediation:(DTAdMediation)mediation
+                       mediationId:(NSString *)mediationId
+                        properties:(NSDictionary *)properties
+                          entrance:(NSString *)entrance;
 
 
 /**
@@ -242,8 +264,10 @@ NS_ASSUME_NONNULL_BEGIN
                 platform:(DTAdPlatform)platform
                 location:(NSString *)location
                 clickGap:(NSNumber *)clickGap
-                returnGap:(NSNumber *)returnGap
+               returnGap:(NSNumber *)returnGap
                      seq:(NSString *)seq
+               mediation:(DTAdMediation)mediation
+             mediationId:(NSString *)mediationId
               properties:(NSDictionary *)properties
                 entrance:(NSString *)entrance;
 
@@ -262,15 +286,17 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportPaid:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-                    value:(NSString *)value
-                currency:(NSString *)currency
-                precision:(NSString *)precision
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+               type:(DTAdType)type
+           platform:(DTAdPlatform)platform
+           location:(NSString *)location
+                seq:(NSString *)seq
+          mediation:(DTAdMediation)mediation
+        mediationId:(NSString *)mediationId
+              value:(NSString *)value
+           currency:(NSString *)currency
+          precision:(NSString *)precision
+         properties:(NSDictionary *)properties
+           entrance:(NSString *)entrance;
 
 
 /**
@@ -315,12 +341,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param entrance 广告入口
  */
 + (void) reportClose:(NSString *)adid
-                    type:(DTAdType)type
-                platform:(DTAdPlatform)platform
-                location:(NSString *)location
-                     seq:(NSString *)seq
-              properties:(NSDictionary *)properties
-                entrance:(NSString *)entrance;
+                type:(DTAdType)type
+            platform:(DTAdPlatform)platform
+            location:(NSString *)location
+                 seq:(NSString *)seq
+           mediation:(DTAdMediation)mediation
+         mediationId:(NSString *)mediationId
+          properties:(NSDictionary *)properties
+            entrance:(NSString *)entrance;
 
 
 
