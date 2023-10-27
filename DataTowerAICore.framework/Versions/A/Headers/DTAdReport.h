@@ -292,7 +292,7 @@ NS_ASSUME_NONNULL_BEGIN
                 seq:(NSString *)seq
           mediation:(DTAdMediation)mediation
         mediationId:(NSString *)mediationId
-              value:(NSString *)value
+              value:(double)value
            currency:(NSString *)currency
           precision:(NSString *)precision
          properties:(NSDictionary *)properties
@@ -322,7 +322,7 @@ NS_ASSUME_NONNULL_BEGIN
                 seq:(NSString *)seq
           mediation:(DTAdMediation)mediation
         mediationId:(NSString *)mediationId
-              value:(NSString *)value
+              value:(double)value
           precision:(NSString *)precision
             country:(NSString *)country
          properties:(NSDictionary *)properties
