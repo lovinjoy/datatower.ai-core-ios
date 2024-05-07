@@ -8,7 +8,8 @@ NS_ASSUME_NONNULL_BEGIN
       serverUrl:(NSString *)url
         channel:(DTChannel)channel
         isDebug:(BOOL)debug
-       logLevel:(DTLoggingLevel)logLevel;
+       logLevel:(DTLoggingLevel)logLevel
+      enableTrack:(BOOL)enableTrack;
         
 
 
@@ -18,7 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
         channel:(DTChannel)channel
         isDebug:(BOOL)debug
        logLevel:(DTLoggingLevel)logLevel
-        commonProperties:(nullable NSDictionary *)commonProperties;
+        commonProperties:(nullable NSDictionary *)commonProperties
+    enableTrack:(BOOL)enableTrack;
 
 @end
 
