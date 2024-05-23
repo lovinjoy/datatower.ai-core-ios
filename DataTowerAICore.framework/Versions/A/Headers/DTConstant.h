@@ -30,6 +30,7 @@ typedef enum  : NSInteger {
     DTAdMediationTopon = 4,
     DTAdMediationTradPlus = 5,
     DTAdMediationToBid = 6,
+    DTAdMediationAdmob = 7,
 
 }DTAdMediation;
 
