@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置访客id
 /// - Parameters:
 ///   - accountId: 访客id，必须唯一
-+ (void)setDistinctId:(NSString *)distinctId;
+//+ (void)setDistinctId:(NSString *)distinctId;
 
 /// 设置Firebase的app_instance_id
 /// - Parameters:

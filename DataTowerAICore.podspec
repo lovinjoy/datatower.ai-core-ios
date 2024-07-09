@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DataTowerAICore'
-  s.version          = '3.0.1'
+  s.version          = '3.0.2'
   s.summary          = 'This is a ios frameWork for LovinJoy Data Tower.'
   s.description      = <<-DESC
                     DataTower.framework provides a quick way to record your project acttion
