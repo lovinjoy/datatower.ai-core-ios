@@ -85,6 +85,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter adjustId: AdjustId
 + (void)setAdjustId:(NSString *)adjustId;
 
+/// 设置TenjinId
+/// - Parameter TenjinId: TenjinId
++ (void)setTenjinId:(NSString *)tenjinId;
+
 /// 设置订阅原始订单id
 /// - Parameters:
 ///   - orderId : 订阅原始订单id
